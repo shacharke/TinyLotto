@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+	<form name="lottoForm">
+		Set how many numbers: 
+		<input type="number" name="numbers" min="1" max="10"><br>
+	</form>
+	<button type="button" onclick="save()">Save settings</button>
+	<script language="JavaScript">
+	function save(){
+		alert(document.lottoForm.numbers.value);
+	}
+	
+
+	</script>
+
+</body>
+</html>

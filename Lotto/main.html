@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body>
+	<button type="button" onclick="showNumbers()">Show me the numbers!</button>
+	<script language="JavaScript">
+	function showNumbers(){
+		var numbers=[];
+		numbers=generateNumbers();
+		alert(numbers);
+	}
+
+	function generateNumbers(){
+		var result=[];
+		for (var i = 0; i<=6; i++) {
+			var myNumber=Math.floor((Math.random() * 40) + 1);
+			result.push(myNumber);
+		};
+		return result;
+	}
+	</script>
+</body>
+</html>
